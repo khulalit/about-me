@@ -14,12 +14,18 @@ export default function HeroSection() {
         </h2>
       </div>
 
-      <p className="md:max-w-96">
+      <p className="md:max-w-96 relative z-10">
         I build modern, user-friendly web applications, keep experimenting with
         new things, and build open-source projects. <br />
-        <Button btnSize="sm" className="mt-4">
-          Download Resume
-        </Button>
+        <a
+          href="https://drive.google.com/file/d/1ajq-ndJAPgYrcWoi_tU5sjgAktXG1PK5/view?usp=drive_link"
+          target="_blank"
+          className="cursor-pointer"
+        >
+          <Button btnSize="sm" className="mt-4 py-1 cursor-pointer">
+            Resume
+          </Button>
+        </a>
       </p>
       <FloatingIcons />
     </main>

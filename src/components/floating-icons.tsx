@@ -27,7 +27,7 @@ const staticIcons = [
 
 export default function FloatingIcons() {
   return (
-    <div className="absolute inset-0 overflow-hidden">
+    <div className="absolute inset-0 overflow-hidden ">
       {animatedIcons.map(({ icon: Icon, className }, index) => (
         <motion.div
           key={index}
