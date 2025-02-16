@@ -5,6 +5,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --lightPink: #ffc9f0;
+  --lightYellow: #ffe68c;
+  --lightBlue: #9ddcff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,7 +18,91 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter);
+  cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="%23FFF" stroke="%23000" stroke-width="2" d="M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 0 1 .35-.15h6.87a.5.5 0 0 0 .35-.85L6.35 2.85a.5.5 0 0 0-.85.35Z"></path></svg>'),
+    auto;
+  width: 300px;
+}
+.pulka-pattern {
+  background-image: radial-gradient(#6161684d 1px, #ededed 1px);
+  background-size: 20px 20px;
+}
+.highlight-half-pink {
+  position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 50%,
+    var(--lightPink) 50%
+  );
+  line-height: 100%;
+  width: fit-content;
+}
+
+.highlight-half-blue {
+  position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 50%,
+    var(--lightBlue) 50%
+  );
+  line-height: 100%;
+  width: fit-content;
+}
+
+.highlight-half-yellow {
+  position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 50%,
+    var(--lightYellow) 50%
+  );
+  line-height: 100%;
+  width: fit-content;
+}
+
+.animate-swing {
+  animation: swing ease-in-out 1s infinite alternate;
+  transform-origin: center -20px;
+  float: left;
+}
+.animate-swing2 {
+  animation: swing2 ease-in-out 1s infinite alternate;
+  transform-origin: center -20px;
+  float: left;
+}
+
+/* For WebKit browsers (Chrome, Safari) */
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+@keyframes swing2 {
+  0% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
 }
