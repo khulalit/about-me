@@ -15,10 +15,10 @@ export default function AboutMe() {
       </div>
       <div className="md:flex md:gap-8">
         <p className="mt-2 text-justify md:max-w-48">
-          I'm a Software Developer with experience in frontend and full-stack
-          development. Passionate about UI engineering, AI, system programming,
-          and open-source contributions. I enjoy solving problems and creating
-          meaningful user experiences.
+          I{"'"}m a Software Developer with experience in frontend and
+          full-stack development. Passionate about UI engineering, AI, system
+          programming, and open-source contributions. I enjoy solving problems
+          and creating meaningful user experiences.
         </p>
 
         <WrapperBorder className="md:translate-y-28">

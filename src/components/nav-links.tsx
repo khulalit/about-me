@@ -3,35 +3,39 @@ import { SquareMenu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
+interface NavLinkProps {
+  name: string;
+  link: string;
+}
+const links: NavLinkProps[] = [
+  {
+    name: "Home",
+    link: "#",
+  },
+  {
+    name: "Projects",
+    link: "#projects",
+  },
+  {
+    name: "Contact",
+    link: "#contact",
+  },
+  {
+    name: "Blog",
+    link: "https://dev.to/lalitkhu",
+  },
+  {
+    name: "About",
+    link: "#about",
+  },
+];
+
 export default function NavLinks() {
   const [open, setOpen] = useState(false);
 
   const handleMenu = () => {
     setOpen((prev) => !prev);
   };
-
-  const links: any = [
-    {
-      name: "Home",
-      link: "#",
-    },
-    {
-      name: "Projects",
-      link: "#projects",
-    },
-    {
-      name: "Contact",
-      link: "#contact",
-    },
-    {
-      name: "Blog",
-      link: "https://dev.to/lalitkhu",
-    },
-    {
-      name: "About",
-      link: "#about",
-    },
-  ];
 
   return (
     <>
@@ -50,7 +54,7 @@ export default function NavLinks() {
             <li>
               <X onClick={handleMenu} color="#0c0c0c" />
             </li>
-            {links.map((item: any, index: any) => (
+            {links.map((item: NavLinkProps, index: number) => (
               <motion.li
                 key={item.name}
                 initial={{ opacity: 0, x: 20 }}

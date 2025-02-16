@@ -11,7 +11,9 @@ export default function ContactForm() {
     phone: "",
   });
 
-  const [errors, setErrors] = useState<any>({
+  const [errors, setErrors] = useState<{
+    [key: string]: string;
+  }>({
     name: "",
     email: "",
     phone: "",

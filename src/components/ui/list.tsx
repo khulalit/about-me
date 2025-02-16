@@ -1,4 +1,5 @@
 import React from "react";
+
 const getColors = (idx: number) => {
   if (idx === 0 || idx % 4 === 0) return "bg-yellow border-darkYellow";
   if (idx === 1 || idx % 5 === 0) return "bg-blue border-darkBlue";
@@ -20,7 +21,8 @@ interface LiProps {
   children: React.ReactNode;
   className?: string;
 }
-List.Li = ({ idx, children, className = "" }: LiProps) => {
+
+const Li: React.FC<LiProps> = ({ idx, children, className = "" }) => {
   return (
     <li className={`flex gap-4 ${className}`}>
       <div
@@ -34,3 +36,7 @@ List.Li = ({ idx, children, className = "" }: LiProps) => {
     </li>
   );
 };
+
+Li.displayName = "List.Li";
+
+List.Li = Li;

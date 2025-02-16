@@ -42,7 +42,7 @@ export default function WorkExperience() {
                 rel="noopener noreferrer"
                 className="text-blue-500 hover:underline ml-2 bg-lightPink"
               >
-                The Techie's Craft
+                The Techie{"'"}s Craft
               </a>{" "}
               <br />
               <span className="text-sm font-light">New Delhi, India</span>{" "}

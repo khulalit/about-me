@@ -20,11 +20,10 @@ export default function Home() {
       <AnimatedSection>
         <WorkExperience />
       </AnimatedSection>
-
       <Education />
-      {/* <AnimatedSection>
+      <AnimatedSection>
         <Projects />
-      </AnimatedSection> */}
+      </AnimatedSection>
       <ContactMe />
       <Footer />
     </div>

@@ -8,7 +8,7 @@ export default function HeroSection() {
       id="#"
     >
       <div className="max-w-64">
-        <h1 className="text-4xl font-extrabold">Hi, I'm Lalit</h1>
+        <h1 className="text-4xl font-extrabold">Hi, I{"'"}m Lalit</h1>
         <h2 className="text-sm mb-2">
           Frontend & Full Stack Developer | UI Enthusiast
         </h2>

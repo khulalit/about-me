@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import {
   Braces,
   Code,
-  Layers,
   Monitor,
   Zap,
   Terminal,
