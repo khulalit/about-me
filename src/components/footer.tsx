@@ -4,13 +4,19 @@ export default function Footer() {
       <h2 className="font-hanldee text-center font-semibold text-xl ">Lalit</h2>
       <ul className="flex gap-2 justify-center">
         <li className="bg-primaryDark text-white w-fit">
-          <a href="https://x.com/khulalit">X.com</a>
+          <a href="https://x.com/khulalit" target="_blank">
+            X.com
+          </a>
         </li>
         <li className="bg-primaryDark text-white w-fit">
-          <a className="https://github.com/khulalit">Github</a>
+          <a href="https://github.com/khulalit/about-me" target="_blank">
+            Github
+          </a>
         </li>
         <li className="bg-primaryDark text-white w-fit">
-          <a href="https://linkedin.com/in/lalit-khudania">Linkedin</a>
+          <a href="https://linkedin.com/in/lalit-khudania" target="_blank">
+            Linkedin
+          </a>
         </li>
       </ul>
     </footer>
