@@ -66,6 +66,7 @@ export default function NavLinks() {
                   href={item.link}
                   onClick={handleMenu}
                   className="hover:tracking-widest transition-all"
+                  target="_blank"
                 >
                   {item.name}
                 </a>
@@ -94,6 +95,7 @@ export default function NavLinks() {
           <a
             href="https://dev.to/lalitkhu"
             className="hover:tracking-widest transition-all"
+            target="_blank"
           >
             Blog
           </a>
@@ -104,7 +106,7 @@ export default function NavLinks() {
           </a>
         </li>
         <li>
-          <a href="" className="hover:tracking-widest transition-all">
+          <a href="#contact" className="hover:tracking-widest transition-all">
             Contact
           </a>
         </li>

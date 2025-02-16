@@ -3,7 +3,7 @@ import ContactForm from "./contact-form";
 
 export default function ContactMe() {
   return (
-    <div className="border px-2 md:px-4 py-8" id="work-experience">
+    <div className="border px-2 md:px-4 py-8" id="contact">
       <div>
         <h2 className="bg-lightPink font-hanldee text-lg w-fit font-bold md:-translate-x-8">
           Contact here

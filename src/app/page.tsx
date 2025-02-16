@@ -1,6 +1,7 @@
 import AboutMe from "@/components/about-me";
 import ContactMe from "@/components/contact";
 import Education from "@/components/education";
+import ScrollProgress from "@/components/floating-progress-bar";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import HeroSection from "@/components/hero-section";
@@ -26,6 +27,7 @@ export default function Home() {
       </AnimatedSection>
       <ContactMe />
       <Footer />
+      <ScrollProgress />
     </div>
   );
 }

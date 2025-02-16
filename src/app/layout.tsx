@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${handlee.variable} antialiased text-primaryDark `}
+        className={`${inter.variable} ${handlee.variable} antialiased text-primaryDark overflow-x-hidden `}
       >
         {children}
       </body>
